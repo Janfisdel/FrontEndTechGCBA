@@ -164,3 +164,38 @@ button {
   border-radius: 4px;        
   cursor: pointer;           
 }
+
+/* 
+Al finalizar modificar las queries en general
+que los flex y grid cambien
+y tambien los tamaños de letras
+VER TAMAÑOS DE DISPOSITIVOS EN CLASE 8 */
+
+
+
+/*Estilos reseñas*/
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:1rem;
+  margin: 2rem;
+  place-items: center;
+}
+
+.resena{
+  background-color: rgba(216, 135, 162, 0.678);
+  padding: 0.5rem;
+  width: 25%;
+  height: 6rem;
+  text-align: center;
+  border: solid black;
+}
+
+@media (max-width:600px){
+  .productos-container{
+  flex-direction: column;               
+}
+.grid-container{
+  grid-template-columns: repeat(1, 1fr);
+}
+}
