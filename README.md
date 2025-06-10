@@ -5,7 +5,7 @@ Proyecto de E-commerce para el curso "Front-end JS. Talento Tech GCBA"
 
 - HTML
 - CSS
-- Java Scipt
+- Java Script
 
 
 # Creado por ✒️
