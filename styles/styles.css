@@ -249,6 +249,32 @@ VER TAMAÑOS DE DISPOSITIVOS EN CLASE 8 */
 }
 }
 
+.contenedor-productos{
+  margin: 1rem;
+}
+.tarjeta-producto{
+  display: flex;             
+  justify-content: center;   
+  gap: 20px;                
+  flex-wrap: wrap;           
+  margin: 20px; 
+  background-color: lightblue;
+  width:25% ;
+}
+
+.img-producto{
+  width:8rem;
+  height: 8rem;
+}
+.btn-agregar{
+
+}
+
+#contador-carrito{
+ background-color: red;
+  border-radius: 50%;
+ padding:0.5rem;
+}
 /*HACER ALGUNA PAGINA CON GRID COMO LA CLASE DE REPASO 7
 puede ser una pagina de imagenes y videos o las reseñas
 o que en la de productos sea un grid y tenga de costado un aside
