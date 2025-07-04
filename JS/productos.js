@@ -11,6 +11,7 @@ fetch(('https://dummyjson.com/products?limit=10'))
         let tarjetaProducto = document.createElement("article")
         tarjetaProducto.classList.add("tarjeta-producto")
        let tituloProducto = document.createElement("h3")
+       tituloProducto.classList.add("titulo-producto")
        tituloProducto.textContent = producto.title
 
        let precioProducto = document.createElement("p")
@@ -38,9 +39,7 @@ fetch(('https://dummyjson.com/products?limit=10'))
        tarjetaProducto.appendChild(botonAgregar)
        contenedorProductos.appendChild(tarjetaProducto)
     }
-         // DEBERIA DARLE A CADA UNO UN FORMATO TIPO CARD Dentro del div que ya existe tal vez
-     
-})
+    })
      .catch(error=>{
     console.error('Error al obtener productos:', error)
 })

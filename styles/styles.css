@@ -24,6 +24,13 @@ main {
   margin-top: 5.5rem;
 }
 
+button {
+  padding: 10px;                         
+  border: none;              
+  border-radius: 4px;        
+  cursor: pointer;           
+}
+
 /* Estilo para logo whatsapp en todas las paginas */
 .sticky-container {
     position: fixed;
@@ -133,7 +140,6 @@ footer {
   align-items: center;
   margin:auto;
   width: 60%;
-  
 }
 
 .portada_slide{
@@ -195,7 +201,7 @@ footer {
 
 
 /* Estilos productos */
-.productos-container{
+/* .productos-container{
   display: flex;             
   justify-content: center;   
   gap: 20px;                
@@ -211,7 +217,7 @@ footer {
   width: 18rem;              
   height: 18rem;             
   object-fit: cover;        
-}
+} */
  /* Estilos contacto */
  form {
   display: flex;             
@@ -227,13 +233,12 @@ input, textarea {
   border-radius: 4px;        
 }
 
-button {
-  padding: 10px;            
-  background-color: #4CAF50; 
-  color: white;             
-  border: none;              
-  border-radius: 4px;        
-  cursor: pointer;           
+
+
+.btn-form{
+  margin-bottom: 2px;
+  background-color: rgba(157, 84, 206, 0.541);
+  border: 1px rgba(77, 0, 128, 0.541) solid;
 }
 
 /* 
@@ -300,49 +305,68 @@ VER TAMAÑOS DE DISPOSITIVOS EN CLASE 8 */
 }
 }
 
+/* Estilos productos */
+.div-productos {
+  display: flex;
+  justify-content: center;
+}
 #contenedor-productos{
-  margin: 1rem;
+  margin: 1rem 1rem 3rem 1rem;
   text-align: center;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   gap:1rem;
 }
+
 .tarjeta-producto{        
   margin: auto; 
   margin-bottom: 1rem;
   background-color: rgba(220, 230, 173, 0.699);
-  width:25% ;
+  width:90% ;
+  border:1px rgba(108, 199, 108, 0.815) solid;
+  border-radius: 15%;
 }
 
+.titulo-producto{
+  padding:0.5rem 0 0 0;
+}
 .img-producto{
   width:8rem;
   height: 8rem;
 }
 .btn-agregar{
-
+margin-bottom: 2px;
+background-color: rgba(0, 128, 0, 0.253);
+border: 1px rgba(0, 128, 0, 0.541) solid;
 }
 
 #contador-carrito{
  background-color: red;
-  border-radius: 50%;
+  border-radius: 40%;
  padding:0.5rem;
 }
 
-.contenedor-carrito{
-  margin: 1rem
+/*Estilos carrito*/
+#contenedor-carrito{
+  margin: 1rem;
+  
 }
 
 .producto-carrito{
   display: flex;             
-  justify-content: center;   
-  gap: 20px;                
+  justify-content: center;                  
   flex-wrap: wrap;           
-  margin: 20px; 
   background-color: rgba(222, 102, 249, 0.223);
-  width:25% ;
+  width:50% ;
+  height: 3rem;
+  margin: 1rem auto;
+  padding: 1rem;
 }
-.btn-elminar{
-
+.btn-eliminar{
+height: 70%;
+margin: 10px;
+background-color:rgba(188, 47, 219, 0.223); ;
+border: 1px solid rgba(190, 20, 228, 0.223);
 }
 
 #acciones-carrito{
@@ -350,6 +374,8 @@ VER TAMAÑOS DE DISPOSITIVOS EN CLASE 8 */
 }
 .btn-vaciar{
   margin: 0.5rem 3rem;
+  background-color: rgba(67, 171, 206, 0.5);
+  border: 1px solid rgba(41, 173, 218, 0.5);
 }
 
 #contador-productos{
@@ -357,8 +383,5 @@ VER TAMAÑOS DE DISPOSITIVOS EN CLASE 8 */
   border-radius: 50%;
  padding:0.5rem;
 }
-/*HACER ALGUNA PAGINA CON GRID COMO LA CLASE DE REPASO 7
-puede ser una pagina de imagenes y videos o las reseñas
-o que en la de productos sea un grid y tenga de costado un aside
-donde van pasando imagenes
-VER CLASE 9 TAMBIEN */
+
+/* CAMBIAR LOS NOMBRE DE LAS CLASES QUE TODO QUEDE DE LA MISMA FORMA */
