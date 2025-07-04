@@ -27,7 +27,7 @@ main {
 /* Estilo para logo whatsapp en todas las paginas */
 .sticky-container {
     position: fixed;
-    bottom: 10px;
+    bottom: 40px;
     right: 10px;
     padding: 5px;
     z-index: 999;
@@ -112,8 +112,9 @@ nav {
 footer {
   width: 100%;
   text-align: center;
-  bottom: 0px;
-  
+  bottom: 0;
+  background-color: rgb(112, 183, 216);
+  position:fixed;
 }
 .footerLink {
   font-size: 2rem;
@@ -125,17 +126,67 @@ footer {
   text-align: center;
 }
 
-#frontImage {
-  display: flex;
+#frontImages {
+  display:block;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  margin: 2rem;
+  margin:auto;
+  width: 60%;
+  
 }
 
-#catarata {
+.portada_slide{
+    width: auto;
+    text-align: center;
+    position:absolute;
+}
+
+.imagen_portada {
   height: 65vh;
   width: 60vw;
 }
+
+#slide1{
+    opacity: 1;
+    animation: transicion1 6s infinite;
+}
+#slide2{
+    opacity:0;
+    animation: transicion2 6s infinite;
+}
+
+#slide3{
+    opacity: 0;
+    animation: transicion3 6s infinite;
+} 
+
+@keyframes transicion1 {
+    0%{ opacity: 1;}
+    20%{opacity:0.5}
+    40%{opacity:0;}
+    50%{opacity:0}
+    60% {opacity:0}
+    80%{opacity:0.5}
+
+}
+
+@keyframes transicion2 {
+    0%{ opacity: 0;}
+    20%{opacity:0.5;}
+    40%{opacity:1;}
+    60% {opacity:0.5}
+    80%{opacity:0}
+}
+
+@keyframes transicion3{
+    0%{ opacity: 0;}
+    20%{opacity:0;}
+    40%{opacity:0;}
+    60% {opacity:0.5}
+    80%{opacity:1}
+} 
+
 /* EStilos paginas secundarias */
 .tituloPaginas{
   font-size: 2.5rem;
@@ -249,16 +300,17 @@ VER TAMAÑOS DE DISPOSITIVOS EN CLASE 8 */
 }
 }
 
-.contenedor-productos{
+#contenedor-productos{
   margin: 1rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap:1rem;
 }
-.tarjeta-producto{
-  display: flex;             
-  justify-content: center;   
-  gap: 20px;                
-  flex-wrap: wrap;           
-  margin: 20px; 
-  background-color: lightblue;
+.tarjeta-producto{        
+  margin: auto; 
+  margin-bottom: 1rem;
+  background-color: rgba(220, 230, 173, 0.699);
   width:25% ;
 }
 
