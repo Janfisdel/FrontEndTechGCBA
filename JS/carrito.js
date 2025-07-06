@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!carrito.length) {
       let mensajeCarrito = document.createElement("p");
-      mensajeCarrito.classList.add("mensaje-carrito");
+      mensajeCarrito.classList.add("mensajeCarrito");
       mensajeCarrito.textContent = "Tu carrito esta vacio";
 
       contenedorCarrito.appendChild(mensajeCarrito);
@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
         tarjetaProducto.classList.add("productoCarrito");
 
         let tituloProducto = document.createElement("h3");
-        tituloProducto.textContent = elemento.title;
+        tituloProducto.textContent =`${elemento.title} `;
 
         let precioProducto = document.createElement("p");
-        precioProducto.textContent = `$${elemento.price}`;
+        precioProducto.textContent = ` $${elemento.price}`;
 
         let botonEliminar = document.createElement("button");
         botonEliminar.classList.add("btnEliminar");
